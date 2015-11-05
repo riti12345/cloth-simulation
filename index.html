@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ container {
+            background-image: url(bg.jpg);
+            
+        }
+		</style>
+<title>Cloth Simulation</title>
+<link rel="stylesheet" type="text/css" href="cloth.css">
+ <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css">
+         <link rel="stylesheet" href="css/cloth.css">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="mrdoob-three.js-223f46b/build/three.min.js"></script>
+        <script src="mrdoob-three.js-223f46b/build/three.js"></script>
+        <script src="js/main.js"></script>
+</head>
+<style type="text/css">
+	body{
+	background-image:url(bg.jpg);
+	}
+	</style>
+<body>
+ 
+        <header>
+            <h2>Cloth Simulation</h2>
+        </header>
+<section>
+	<div id="left">
+		 <div id="tabs">
+                    <ul>
+                       
+                        <li><a href="#settings">Settings</a></li>
+                        
+                    </ul>
+                    <div id="settings">
+                        <div id="wind">
+                            <div id="windLabel">Wind</div>
+                             <table id="windTable">
+                             	<tr>
+                                    <td class="sliderRow">
+                                        <div id="xSlider" class="windSlider"></div>
+                                    </td>
+
+                                    <td class="sliderRow">
+                                        <div id="ySlider" class="windSlider"></div>    
+                                    </td>
+                                     </tr>
+                                     <tr>
+                                    <td>
+                                        <span class="windAxis">x</p>
+                                    </td>
+                                    <td>
+                                        <span class="windAxis">y</p>
+                                    </td>
+                                </tr>
+                             </table>
+
+                        </div>
+                         <table id="sliderTable">
+                         	<tr>
+                              
+                                <td>
+                                    <div>Gravity</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                                <td>
+                                    <div id="gravSlider"></div>
+                                </td>
+                            </tr>
+                         </table>
+                          <div style="clear: both;"></div>
+
+                        <div id="numPoints">
+                            <div id="up" class="arrowUp"></div>
+                            <div id="dimensions">[20, 20]</div>
+                            <div id="down" class="arrowDown"></div>
+                        </div>
+                        <button id="redraw" class="blue button">redraw</button>
+                    </div>
+                </div>
+	</div>
+	 <div id="right">
+                <div id="canvasMode"></div>
+                <div id="container"></div>
+				
+                
+            </div>
+
+</section>
+ <script src="js/vendor/three.min.js"></script>
+        <script src="js/vendor/jquery.mousewheel.js"></script>
+       
+           <script src="js/detector.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/cloth.js"></script>
+        <script src="js/point.js"></script>
+        <script src="js/triangle.js"></script>
+        <script src="js/clothsim.js"></script>
+        
+</body>
+</html>
